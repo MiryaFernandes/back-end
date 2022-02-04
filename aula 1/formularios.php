@@ -23,10 +23,12 @@ gwretr
     $sexo = $_GET['rdoSexo'];
     $observacao = $_GET['txtObs'];    
 
+    //foi criado essas variaveis paa resolver o problema de variavel indefinida na eibiçao de dados
     $idiomaEN = null;
     $idiomaES = null;
     $idiomaPT = null;
-    //tratamento para recupera
+
+    //tratamento para recuperar os checkbox que foram selecionados no formulario
     if(isset($_GET['chkPT'])){
  
         $idiomaPT = $_GET['chkPT'];
